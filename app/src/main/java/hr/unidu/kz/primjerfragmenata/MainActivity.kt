@@ -10,14 +10,11 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-        val fm = supportFragmentManager
-        val ft = fm.beginTransaction()
-        ft.replace(R.id.fragment02, MojFragment())
-        ft.addToBackStack("tag1")
-        ft.commit()
-
-
-
+        // Stvara s enovi objekt tipa MojFragment i predaju mu se parametri
+        val frag = MojFragment.newInstance("Pero", "Perić")
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.fragment02, frag)
+            .addToBackStack("tag1")
+            .commit()
     }
 }
