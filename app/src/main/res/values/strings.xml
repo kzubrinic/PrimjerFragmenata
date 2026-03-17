@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PrimjerFragmenata</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="tekst">Ovo je tekst u fragmentu</string>
+</resources>
